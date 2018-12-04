@@ -27,7 +27,7 @@ public class sorts{
           indexOfSmall = i;
         }
       }
-      System.out.println("CurrentIndex: " + currentIndex + " indexOfSmall: " + indexOfSmall + " value of small: " + ary[indexOfSmall]);
+      //System.out.println("CurrentIndex: " + currentIndex + " indexOfSmall: " + indexOfSmall + " value of small: " + ary[indexOfSmall]);
       swap(ary, indexOfSmall, currentIndex);
     }
   }
