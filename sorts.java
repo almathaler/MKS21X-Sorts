@@ -8,8 +8,8 @@ public class sorts{
     System.out.println("These are your args: " + Arrays.toString(arguements));
     //swap(arguements, 2, 4);
     //System.out.println("Swap 4th and 2nd index: " + Arrays.toString(arguements));
-    selectionsort(arguements);
-    System.out.println("selectionsorted args: " + Arrays.toString(arguements));
+    selectionSort(arguements);
+    System.out.println("selectionSorted args: " + Arrays.toString(arguements));
     //selectionsort(arguements);
     //System.out.println("Sorted with selectionsort: " + Arrays.toString(arguements));
   }
@@ -19,7 +19,7 @@ public class sorts{
     ary[i1] = hold;
   }
 
-  public static void selectionsort(int[] ary){
+  public static void selectionSort(int[] ary){
     for(int currentIndex = 0; currentIndex < ary.length; currentIndex++){
       int indexOfSmall = currentIndex;
       for (int i = currentIndex; i<ary.length; i++){
@@ -27,7 +27,8 @@ public class sorts{
           indexOfSmall = i;
         }
       }
-      //System.out.println("CurrentIndex: " + currentIndex + " indexOfSmall: " + indexOfSmall + " value of small: " + ary[indexOfSmall]);
+      System.out.println("CurrentIndex: " + currentIndex + " indexOfSmall: " + indexOfSmall + " value of small: " + ary[indexOfSmall]);
+      System.out.println("What array looks like now:" + Arrays.toString(ary));
       swap(ary, indexOfSmall, currentIndex);
     }
   }
