@@ -52,7 +52,8 @@ public class sorts{
 		}
 		if (!aSort) {
 			done = true;
-		}	
+		}
+		System.out.println("What array looks like now:" + Arrays.toString(ary)); 	
 	}
  }
 }
