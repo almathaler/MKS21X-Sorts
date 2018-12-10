@@ -32,9 +32,9 @@ public class Sorts{
           indexOfSmall = i;
         }
       }
-     //System.out.println("What array looks like now:" + Arrays.toString(ary)); 
-     //System.out.println("CurrentIndex: " + currentIndex + " indexOfSmall: " + indexOfSmall + " value of small: " + ary[indexOfSmall]);
-//      System.out.println("What array looks like now:" + Arrays.toString(ary));
+//     System.out.println("What array looks like now:" + Arrays.toString(ary)); 
+//     System.out.println("CurrentIndex: " + currentIndex + " indexOfSmall: " + indexOfSmall + " value of small: " + ary[indexOfSmall]);
+//     System.out.println("What array looks like now:" + Arrays.toString(ary));
       swap(ary, indexOfSmall, currentIndex);
     }
   }
