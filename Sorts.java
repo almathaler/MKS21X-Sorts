@@ -58,6 +58,18 @@ public class Sorts{
 		//System.out.println("What array looks like now:" + Arrays.toString(ary)); 	
 	}
  }
+
+ public static void insertionSort(int[] ary){
+ 	for (int i = 1; i<ary.length; i++){
+		int current = ary[i];
+		int target = 0;
+		for (int j = 0; j<i; j++){
+			if (ary[j] < current){
+				target = j; //continue -- 	
+			}		
+		}	
+	}
+ }
 }
 
 
