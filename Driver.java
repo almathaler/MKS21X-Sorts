@@ -8,6 +8,11 @@ public class Driver{
       randish[i] =(int)(Math.random()*10000);
     }
 
+    int[] allZero = new int[Integer.parseInt(artie[0])];
+    for (int i = 0; i < allZero.length; i++){
+      allZero[i] = 0;
+    }
+
     if(artie[1].equals("selection")){
       Sorts.selectionSort(randish);
     }
@@ -16,6 +21,9 @@ public class Driver{
     }
     if(artie[1].equals("insertion")){
       Sorts.insertionSort(randish);
+    }
+    if(artie[1].equals("bubbleZero")){
+      Sorts.bubbleSort(allZero);
     }
     if(artie[1].equals("test")){
       int[] randish2 = Arrays.copyOf(randish,randish.length);
