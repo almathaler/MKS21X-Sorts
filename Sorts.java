@@ -60,9 +60,9 @@ public class Sorts{
 
  public static void insertionSort(int [] ary){
    for (int i = 1; i<ary.length; i++){
-     System.out.println("Current array:" + Arrays.toString(ary));
+     //System.out.println("Current array:" + Arrays.toString(ary));
      int current = ary[i];
-     System.out.println("Current: " + current);
+     //System.out.println("Current: " + current);
      //boolean sorted = false;
      int j = i-1;
      /**

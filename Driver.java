@@ -21,7 +21,7 @@ public class Driver{
       int[] randish2 = Arrays.copyOf(randish,randish.length);
       int[] randish3 = Arrays.copyOf(randish,randish.length);
       Sorts.selectionSort(randish);
-      Sorts.bubbleSort(randish2);
+      Sorts.insertionSort(randish2);
       Arrays.sort(randish3);
       if( Arrays.equals(randish,randish3)){
         System.out.println("Selection Correct!");
@@ -29,9 +29,9 @@ public class Driver{
        System.out.println("Selection BROKEN!!!!");
       }
       if( Arrays.equals(randish2,randish3)){
-        System.out.println("Bubble Correct!");
+        System.out.println("insertion Correct!");
       }else{
-       System.out.println("Bubble BROKEN!!!!");
+       System.out.println("insertion BROKEN!!!!");
       }
     }
   }
