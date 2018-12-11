@@ -9,8 +9,8 @@ public class Sorts{
     System.out.println("These are your args: " + Arrays.toString(arguements));
     //swap(arguements, 2, 4);
     //System.out.println("Swap 4th and 2nd index: " + Arrays.toString(arguements));
-    selectionSort(arguements);
-    System.out.println("sSorted args: " + Arrays.toString(arguements));
+    insertionSort(arguements);
+    System.out.println("insertionSorted args: " + Arrays.toString(arguements));
     //selectionsort(arguements);
     //System.out.println("Sorted with selectionsort: " + Arrays.toString(arguements));
   }
@@ -60,19 +60,34 @@ public class Sorts{
 
  public static void insertionSort(int [] ary){
    for (int i = 1; i<ary.length; i++){
-     //System.out.println("Current array:" + Arrays.toString(ary));
+     System.out.println("Current array:" + Arrays.toString(ary));
      int current = ary[i];
-     boolean sorted = false;
+     System.out.println("Current: " + current);
+     //boolean sorted = false;
      int j = i-1;
+     /**
      if (current>ary[i-1]){
        sorted = true;
      }
-     while (!sorted){
+     **/
+     while ( j >= 0 && ary[j] > current){
+       ary[j+1] = ary[j];
+       j--;
+     }
+     if (j<0){
+       ary[0] = current;
+     }
+     else{
+       ary[j+1] = current;
+     }
+
+       //System.out.println("Current array: " + Arrays.toString(ary));
+       /**
        if(ary[j] > current){
          ary[j+1] = ary[j];
          j--;
        }
-       if(j == 0){
+       if(j == -1){
          ary[0] = current;
          sorted = true;
        }
@@ -80,7 +95,7 @@ public class Sorts{
          ary[j+1] = current;
          sorted = true;
        }
-       /**
+       //diff
        if (current<ary[j]){
          for (int k = i; k >= j; k--){
            if (k == j){
@@ -96,8 +111,8 @@ public class Sorts{
        else{
          j++;
        }
-       **/
      }
+     **/
    }
  }
 }
